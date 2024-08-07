@@ -1,0 +1,16 @@
+module.exports = {
+    SUCCESS_ERR_CODE: 0,
+    SUCCESS_ERR_MESSAGE: "Success",
+
+    UNKNOWN_ERR_CODE: 500,
+    UNKNOWN_ERR_MESSAGE: "Unknown Error",
+
+    NOT_FOUND_ERR_CODE: 404,
+    NOT_FOUND_ERR_MESSAGE: "Not Found",
+
+    NO_ACCESS_ERR_CODE: 401,
+    NO_ACCESS_ERR_MESSAGE: "No Access",
+
+    INVALID_INPUT_ERR_CODE: 400,
+    INVALID_INPUT_ERR_MESSAGE: "Bad Request",
+}
