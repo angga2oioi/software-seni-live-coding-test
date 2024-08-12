@@ -8,7 +8,7 @@ module.exports = {
     async UtilsGetServerStatus(req, res) {
         try {
 
-            res.status(200).json({
+            res.status(SUCCESS_ERR_CODE).json({
                 error: SUCCESS_ERR_CODE,
                 message: SUCCESS_ERR_MESSAGE,
                 data: {
@@ -16,8 +16,7 @@ module.exports = {
                 },
             });
         } catch (e) {
-            console.log(e);
-            res.status(UNKNOWN_ERR_CODE).json(e.message || UNKNOWN_ERR_MESSAGE);
+            res.status(e?.code || UNKNOWN_ERR_CODE).json(e.message || UNKNOWN_ERR_MESSAGE);
         }
     },
 };
